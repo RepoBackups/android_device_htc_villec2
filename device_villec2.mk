@@ -26,6 +26,12 @@ DEVICE_PACKAGE_OVERLAYS += device/htc/villec2/overlay
 PRODUCT_PACKAGES += \
     gps.villec2
 
+# F2FS
+PRODUCT_PACKAGES += \
+    mkfs.f2fs \
+    fsck.f2fs \
+    fibmap.f2fs
+
 # Wifi
 $(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4329/device-bcm.mk)
 
