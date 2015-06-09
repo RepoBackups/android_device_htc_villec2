@@ -13,9 +13,14 @@ PRODUCT_COPY_FILES += device/htc/villec2/recovery/etc/twrp.fstab:recovery/root/e
 #SELinux
 HAVE_SELINUX := true
 
+TW_THEME := portrait_hdpi
 DEVICE_RESOLUTION := 540x960
-PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 TW_INCLUDE_DUMLOCK := true
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 BOARD_HAS_NO_REAL_SDCARD := true
+TW_NO_SCREEN_BLANK := true
+HAVE_SELINUX := true
+TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
+TW_INTERNAL_STORAGE_PATH := "/sdcard"
+TW_INTERNAL_STORAGE_MOUNT_POINT := "sdcard"
